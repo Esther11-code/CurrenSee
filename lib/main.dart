@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
             builder: (context, child) {
               return MaterialApp(
                   debugShowCheckedModeBanner: false,
-                  title: 'ecommerce',
+                  title: 'CurrenSee',
                   theme: ThemeData(
                       colorScheme:
                           ColorScheme.fromSeed(seedColor: Colors.white),

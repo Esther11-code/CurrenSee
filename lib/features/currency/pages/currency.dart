@@ -1,12 +1,11 @@
-import 'package:currencsee/core/constants/exports.dart';
-import 'package:currencsee/features/currency/data/models/currency_model.dart';
-import 'package:currencsee/features/currency/pages/bloc/cubit/currency_cubit.dart';
-import 'package:currencsee/features/home/data/models/currency_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:currencsee/core/constants/exports.dart';
+import 'package:currencsee/features/currency/data/models/currency_model.dart'; // Adjust path as per your project
+import 'package:currencsee/features/currency/pages/bloc/cubit/currency_cubit.dart';
 
 class CurrencyListScreen extends StatefulWidget {
   const CurrencyListScreen({super.key});
@@ -16,37 +15,28 @@ class CurrencyListScreen extends StatefulWidget {
 }
 
 class CurrencyListScreenState extends State<CurrencyListScreen> {
-  late Future<List<Currency>> futureCurrencies;
-  List<Currency> filteredCurrencies = [];
+  late Future<void> futureCurrencies;
+  List<Country> filteredCurrencies = [];
   TextEditingController searchController = TextEditingController();
 
   @override
   void initState() {
-    final watchCurrency = context.watch<CurrencyCubit>();
-    
     super.initState();
-    futureCurrencies = watchCurrency.fetchCurrencies();
-    futureCurrencies.then((currencies) {
-      setState(() {
-        filteredCurrencies = currencies;
-      });
-    });
+    final currencyCubit = context.read<CurrencyCubit>();
+    futureCurrencies = currencyCubit.fetchCountries();
   }
 
   void filterCurrencies(String query) {
-    futureCurrencies.then((currencies) {
-      final filtered = currencies.where((currency) {
-        final nameLower = currency.name.toLowerCase();
-        final codeLower = currency.code.toLowerCase();
-        final searchLower = query.toLowerCase();
+    final filtered = filteredCurrencies.where((currency) {
+      final nameLower = currency.countryName!.toLowerCase();
+      final codeLower = currency.code!.toLowerCase();
+      final searchLower = query.toLowerCase();
 
-        return nameLower.contains(searchLower) ||
-            codeLower.contains(searchLower);
-      }).toList();
+      return nameLower.contains(searchLower) || codeLower.contains(searchLower);
+    }).toList();
 
-      setState(() {
-        filteredCurrencies = filtered;
-      });
+    setState(() {
+      filteredCurrencies = filtered;
     });
   }
 
@@ -67,11 +57,13 @@ class CurrencyListScreenState extends State<CurrencyListScreen> {
                 labelStyle: TextStyle(color: Appcolors.blackColor),
                 hintStyle: TextStyle(color: Appcolors.blackColor),
                 focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Appcolors.blackColor)),
+                  borderRadius: BorderRadius.circular(8.0),
+                  borderSide: BorderSide(color: Appcolors.blackColor),
+                ),
                 enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide(color: Appcolors.blackColor)),
+                  borderRadius: BorderRadius.circular(8.0),
+                  borderSide: BorderSide(color: Appcolors.blackColor),
+                ),
                 prefixIcon: const Icon(Icons.search),
                 labelText: 'Change currency',
                 border: OutlineInputBorder(
@@ -83,14 +75,14 @@ class CurrencyListScreenState extends State<CurrencyListScreen> {
             ),
           ),
           Expanded(
-            child: FutureBuilder<List<Country>>(
-              future: futureCurrencies,
-              builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
+            child: BlocBuilder<CurrencyCubit, CurrencyState>(
+              builder: (context, state) {
+                if (state is CurrencyLoading) {
                   return const Center(child: CircularProgressIndicator());
-                } else if (snapshot.hasError) {
-                  return Center(child: Text('Error: ${snapshot.error}'));
-                } else {
+                } else if (state is CurrencyError) {
+                  return const Center(child: Text('Error fetching currencies.'));
+                } else if (state is CurrencyLoaded) {
+                  filteredCurrencies = state.countries!;
                   return ListView.builder(
                     itemCount: filteredCurrencies.length,
                     itemBuilder: (context, index) {
@@ -110,7 +102,7 @@ class CurrencyListScreenState extends State<CurrencyListScreen> {
                                 ],
                               ),
                               child: SvgPicture.network(
-                                currency.flagUrl,
+                                currency.flag ?? '',
                                 width: 32.w,
                                 height: 32.h,
                                 placeholderBuilder: (context) =>
@@ -118,12 +110,13 @@ class CurrencyListScreenState extends State<CurrencyListScreen> {
                               ),
                             ),
                             title: Text(
-                              currency.code,
+                              currency.code ?? '',
                               style: GoogleFonts.notoSans(
-                                  fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                             subtitle: Text(
-                              currency.name,
+                              currency.countryName ?? '',
                               style: GoogleFonts.notoSans(),
                             ),
                             trailing: Icon(
@@ -137,6 +130,8 @@ class CurrencyListScreenState extends State<CurrencyListScreen> {
                       );
                     },
                   );
+                } else {
+                  return const Center(child: Text('No data available.'));
                 }
               },
             ),
