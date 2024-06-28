@@ -1,10 +1,10 @@
 import 'package:currencsee/core/config/details/custom_page_route.dart';
 import 'package:currencsee/core/config/details/route_name.dart';
 import 'package:currencsee/features/authentication/presentation/pages/login.dart';
-import 'package:currencsee/features/currency/pages/currency.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../../../features/authentication/presentation/pages/signup.dart';
+import '../../../features/currency/pages/currency.dart';
 import '../../../features/home/presetntation/pages/bottom_nav.dart';
 import '../../../features/home/presetntation/pages/onboard.dart';
 
@@ -29,11 +29,11 @@ class AppRoute {
             direction: AxisDirection.left,
             duration: 500,
             child: const BottomNav());
-      // case RouteName.selectCurrency:
-      //   return CustomPageRoute(
-      //       direction: AxisDirection.left,
-      //       duration: 500,
-      //       child: const CurrencyListScreen());
+      case RouteName.switchCurrency:
+        return CustomPageRoute(
+            direction: AxisDirection.left,
+            duration: 500,
+            child: const CurrencyListScreen());
 
       default:
         return CustomPageRoute(child: const SignUp());

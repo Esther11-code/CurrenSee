@@ -8,11 +8,11 @@ final class CurrencyInitial extends CurrencyState {}
 final class CurrencyLoading extends CurrencyState {}
 
 final class CurrencyLoaded extends CurrencyState {
-  final List<Country>? countries;
+  final List<CountryInfoModel>? countries;
 
   CurrencyLoaded(this.countries);
 
-   @override
+  @override
   bool operator ==(Object other) =>
       identical(this, other) ||
       other is CurrencyLoaded &&

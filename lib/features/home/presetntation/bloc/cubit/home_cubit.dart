@@ -9,16 +9,12 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit() : super(HomeInitial());
   List bottomnavScreen = [
     HomePage(
-      country: Country(
-        flag: 'http://img.geonames.org/flags/x/yt.gif',
-        countryName: 'Mayotte',
-        currency: 'Euro Member Countries',
-        code: 'EUR',
-        symbol: '\u20AC',
-        symbolImage:
-            'https://www.xe.com/symbols-page/symbols/curSymbol8364.gif',
-      ),
-    )
+        country: CountryInfoModel(
+            code: "INR",
+            exchangeRate: 50.0000,
+            name: "United States Dollars",
+            symbol: "\$",
+            displaySymbolOnRight: false)),
   ];
   int bottonnavIndex = 0;
 

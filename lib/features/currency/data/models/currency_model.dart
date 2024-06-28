@@ -1,36 +1,32 @@
-class Country {
-  String? flag;
-  String? countryName;
-  String? currency;
+class CountryInfoModel {
   String? code;
+  double? exchangeRate;
+  String? name;
   String? symbol;
-  String? symbolImage;
+  bool? displaySymbolOnRight;
 
-  Country(
-      {this.flag,
-      this.countryName,
-      this.currency,
-      this.code,
+  CountryInfoModel(
+      {this.code,
+      this.exchangeRate,
+      this.name,
       this.symbol,
-      this.symbolImage});
+      this.displaySymbolOnRight});
 
-  Country.fromJson(Map<String, dynamic> json) {
-    flag = json['Flag'];
-    countryName = json['CountryName'];
-    currency = json['Currency'];
+  CountryInfoModel.fromJson(Map<String, dynamic> json) {
     code = json['Code'];
+    exchangeRate = json['ExchangeRate'];
+    name = json['Name'];
     symbol = json['Symbol'];
-    symbolImage = json['SymbolImage'];
+    displaySymbolOnRight = json['DisplaySymbolOnRight'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['Flag'] = flag;
-    data['CountryName'] = countryName;
-    data['Currency'] = currency;
     data['Code'] = code;
+    data['ExchangeRate'] = exchangeRate;
+    data['Name'] = name;
     data['Symbol'] = symbol;
-    data['SymbolImage'] = symbolImage;
+    data['DisplaySymbolOnRight'] = displaySymbolOnRight;
     return data;
   }
 }

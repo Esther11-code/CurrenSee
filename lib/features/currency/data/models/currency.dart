@@ -1,3 +1,7 @@
+
+class CurrencyRep
+{
+    static List<Map<String, String>> country = 
 [
     {
         "Flag": "http://img.geonames.org/flags/x/ad.gif",
@@ -28,7 +32,7 @@
         "CountryName": "Antigua and Barbuda",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -36,7 +40,7 @@
         "CountryName": "Anguilla",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -76,7 +80,7 @@
         "CountryName": "Argentina",
         "Currency": "Argentina Peso",
         "Code": "ARS",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -84,7 +88,7 @@
         "CountryName": "American Samoa",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -100,7 +104,7 @@
         "CountryName": "Australia",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -140,7 +144,7 @@
         "CountryName": "Barbados",
         "Currency": "Barbados Dollar",
         "Code": "BBD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -212,7 +216,7 @@
         "CountryName": "Bermuda",
         "Currency": "Bermuda Dollar",
         "Code": "BMD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -220,7 +224,7 @@
         "CountryName": "Brunei",
         "Currency": "Brunei Darussalam Dollar",
         "Code": "BND",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -228,7 +232,7 @@
         "CountryName": "Bolivia",
         "Currency": "Bolivia Bolíviano",
         "Code": "BOB",
-        "Symbol": "$b",
+        "Symbol": "\$b",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36-98.gif"
     },
     {
@@ -236,7 +240,7 @@
         "CountryName": "Bonaire, Saint Eustatius and Saba",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -244,7 +248,7 @@
         "CountryName": "Brazil",
         "Currency": "Brazil Real",
         "Code": "BRL",
-        "Symbol": "R$",
+        "Symbol": "R\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol82-36.gif"
     },
     {
@@ -252,7 +256,7 @@
         "CountryName": "Bahamas",
         "Currency": "Bahamas Dollar",
         "Code": "BSD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -292,7 +296,7 @@
         "CountryName": "Belize",
         "Currency": "Belize Dollar",
         "Code": "BZD",
-        "Symbol": "BZ$",
+        "Symbol": "BZ\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol66-90-36.gif"
     },
     {
@@ -300,7 +304,7 @@
         "CountryName": "Canada",
         "Currency": "Canada Dollar",
         "Code": "CAD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -308,7 +312,7 @@
         "CountryName": "Cocos Islands",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -356,7 +360,7 @@
         "CountryName": "Cook Islands",
         "Currency": "New Zealand Dollar",
         "Code": "NZD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -364,7 +368,7 @@
         "CountryName": "Chile",
         "Currency": "Chile Peso",
         "Code": "CLP",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -388,7 +392,7 @@
         "CountryName": "Colombia",
         "Currency": "Colombia Peso",
         "Code": "COP",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -412,7 +416,7 @@
         "CountryName": "Cabo Verde",
         "Currency": "Cape Verdean escudo",
         "Code": "CVE",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": ""
     },
     {
@@ -428,7 +432,7 @@
         "CountryName": "Christmas Island",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -476,7 +480,7 @@
         "CountryName": "Dominica",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -484,7 +488,7 @@
         "CountryName": "Dominican Republic",
         "Currency": "Dominican Republic Peso",
         "Code": "DOP",
-        "Symbol": "RD$",
+        "Symbol": "RD\$",
         "SymbolImage": "https://www.xe.com/symbolxs-page/symbols/curSymbol82-68-36.gif"
     },
     {
@@ -500,7 +504,7 @@
         "CountryName": "Ecuador",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -564,7 +568,7 @@
         "CountryName": "Fiji",
         "Currency": "Fiji Dollar",
         "Code": "FJD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -580,7 +584,7 @@
         "CountryName": "Micronesia",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -620,7 +624,7 @@
         "CountryName": "Grenada",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -732,7 +736,7 @@
         "CountryName": "Guam",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -748,7 +752,7 @@
         "CountryName": "Guyana",
         "Currency": "Guyana Dollar",
         "Code": "GYD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -756,7 +760,7 @@
         "CountryName": "Hong Kong",
         "Currency": "Hong Kong Dollar",
         "Code": "HKD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -764,7 +768,7 @@
         "CountryName": "Heard Island and McDonald Islands",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -844,7 +848,7 @@
         "CountryName": "British Indian Ocean Territory",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -892,7 +896,7 @@
         "CountryName": "Jamaica",
         "Currency": "Jamaica Dollar",
         "Code": "JMD",
-        "Symbol": "J$",
+        "Symbol": "J\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol74-36.gif"
     },
     {
@@ -940,7 +944,7 @@
         "CountryName": "Kiribati",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -956,7 +960,7 @@
         "CountryName": "Saint Kitts and Nevis",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -996,7 +1000,7 @@
         "CountryName": "Cayman Islands",
         "Currency": "Cayman Islands Dollar",
         "Code": "KYD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1028,7 +1032,7 @@
         "CountryName": "Saint Lucia",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1052,7 +1056,7 @@
         "CountryName": "Liberia",
         "Currency": "Liberia Dollar",
         "Code": "LRD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1148,7 +1152,7 @@
         "CountryName": "Marshall Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1196,7 +1200,7 @@
         "CountryName": "Northern Mariana Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1220,7 +1224,7 @@
         "CountryName": "Montserrat",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1260,7 +1264,7 @@
         "CountryName": "Mexico",
         "Currency": "Mexico Peso",
         "Code": "MXN",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1284,7 +1288,7 @@
         "CountryName": "Namibia",
         "Currency": "Namibia Dollar",
         "Code": "NAD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1308,7 +1312,7 @@
         "CountryName": "Norfolk Island",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1324,7 +1328,7 @@
         "CountryName": "Nicaragua",
         "Currency": "Nicaragua Cordoba Symbol",
         "Code": "NIO",
-        "Symbol": "C$",
+        "Symbol": "C\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol67-36.gif"
     },
     {
@@ -1356,7 +1360,7 @@
         "CountryName": "Nauru",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1364,7 +1368,7 @@
         "CountryName": "Niue",
         "Currency": "New Zealand Dollar",
         "Code": "NZD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1372,7 +1376,7 @@
         "CountryName": "New Zealand",
         "Currency": "New Zealand Dollar",
         "Code": "NZD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1452,7 +1456,7 @@
         "CountryName": "Pitcairn",
         "Currency": "New Zealand Dollar",
         "Code": "NZD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1460,7 +1464,7 @@
         "CountryName": "Puerto Rico",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1484,7 +1488,7 @@
         "CountryName": "Palau",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1556,7 +1560,7 @@
         "CountryName": "Solomon Islands",
         "Currency": "Solomon Islands Dollar",
         "Code": "SBD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1596,7 +1600,7 @@
         "CountryName": "Singapore",
         "Currency": "Singapore Dollar",
         "Code": "SGD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1668,7 +1672,7 @@
         "CountryName": "Suriname",
         "Currency": "Suriname Dollar",
         "Code": "SRD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1684,7 +1688,7 @@
         "CountryName": "El Salvador",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1716,7 +1720,7 @@
         "CountryName": "Turks and Caicos Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1764,7 +1768,7 @@
         "CountryName": "Tokelau",
         "Currency": "New Zealand Dollar",
         "Code": "NZD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1772,7 +1776,7 @@
         "CountryName": "Timor Leste",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1812,7 +1816,7 @@
         "CountryName": "Trinidad and Tobago",
         "Currency": "Trinidad and Tobago Dollar",
         "Code": "TTD",
-        "Symbol": "TT$",
+        "Symbol": "TT\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol84-84-36.gif"
     },
     {
@@ -1820,7 +1824,7 @@
         "CountryName": "Tuvalu",
         "Currency": "Australia Dollar",
         "Code": "AUD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1828,7 +1832,7 @@
         "CountryName": "Taiwan",
         "Currency": "Taiwan New Dollar",
         "Code": "TWD",
-        "Symbol": "NT$",
+        "Symbol": "NT\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol78-84-36.gif"
     },
     {
@@ -1860,7 +1864,7 @@
         "CountryName": "United States Minor Outlying Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1868,7 +1872,7 @@
         "CountryName": "United States",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1876,7 +1880,7 @@
         "CountryName": "Uruguay",
         "Currency": "Uruguay Peso",
         "Code": "UYU",
-        "Symbol": "$U",
+        "Symbol": "\$U",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36-85.gif"
     },
     {
@@ -1900,7 +1904,7 @@
         "CountryName": "Saint Vincent and the Grenadines",
         "Currency": "East Caribbean Dollar",
         "Code": "XCD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1916,7 +1920,7 @@
         "CountryName": "British Virgin Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -1924,7 +1928,7 @@
         "CountryName": "U.S. Virgin Islands",
         "Currency": "United States Dollar",
         "Code": "USD",
-        "Symbol": "$",
+        "Symbol": "\$",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol36.gif"
     },
     {
@@ -2015,4 +2019,4 @@
         "Symbol": "ƒ",
         "SymbolImage": "https://www.xe.com/symbols-page/symbols/curSymbol402.gif"
     }
-]
+];}
